@@ -6,6 +6,7 @@ const Blog=require('./models/blog')
 const methodOverride = require('method-override')
 
 mongoose.connect('mongodb://localhost/blog',{ useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
+//mongoose.connect('mongodb+srv://user-admin:admin@cluster0.7dwpk.mongodb.net/blog?retryWrites=true&w=majority',{ useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true})
 
 app.set('view engine', 'ejs')
 
